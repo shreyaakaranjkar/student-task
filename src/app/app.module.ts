@@ -6,13 +6,15 @@ import { StdformComponent } from './components/stdform/stdform.component';
 import { StdtableComponent } from './components/stdtable/stdtable.component';
 import { ProductComponent } from './components/product/product.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProductcatComponent } from './components/productcat/productcat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StdformComponent,
     StdtableComponent,
-    ProductComponent
+    ProductComponent,
+    ProductcatComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,18 @@
+<div class="card   text-center my-3" *ngFor="let productcard of getproductArr">
+    <div class="card-header text-white" [ngClass]="{'bg-success':productcard.category === 'product',
+    'bg-primary' : productcard.category === 'catalog'}">
+        <h4>{{productcard.prodName}}</h4>
+    </div>
+    <div class="card-body">
+        <h6>
+            {{productcard.prodDesc}}
+        </h6>
+        <hr>
+        <a href=""><img [src]="productcard.img" alt="" class="img-fluid"></a>
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-warning mr-2">Edit</button>
+        <button class="btn btn-danger">Delete</button>
+    </div>
+
+</div>

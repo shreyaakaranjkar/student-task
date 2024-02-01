@@ -6,6 +6,12 @@
     <label for="">Product Description</label>
     <textarea type="text" [(ngModel)]="prodDesc" class="form-control"></textarea>
 </div>
+<div class="form-group">
+    <label for="">Product Image Link</label>
+    <input type="text" [(ngModel)]="imgLink" placeholder="Image Link goes here.. " class="form-control">
+</div>
 <div class="text-right">
-    <button class="btn btn-primary" (click)="onAddProduct()">Add Product</button>
+    <button class="btn btn-primary mr-2" (click)="onAddProduct('product')">Add Product</button>
+    <button class="btn btn-primary" (click)="onAddProduct('catalog')">Add Catalog</button>
+
 </div>

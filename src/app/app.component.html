@@ -13,9 +13,13 @@
 
   <div class="row">
 
-    <div class="col-md-8 offset-2 my-3">
+    <div class="col-md-6 my-3">
 
-      <app-product></app-product>
+      <app-product (sendProductData)="getProductData($event)"></app-product>
+    </div>
+    <div class="col-md-6 my-3">
+
+      <app-productcat [getproductArr]="productArray"></app-productcat>
     </div>
   </div>
 </div>

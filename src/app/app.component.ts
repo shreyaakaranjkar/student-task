@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Istudent } from './interfaces/student';
+import { Iproduct, Istudent } from './interfaces/student';
 
 @Component({
   selector: 'app-root',
@@ -18,8 +18,21 @@ export class AppComponent {
   }
   ]
 
+  productArray:Array<Iproduct> = [
+    {
+      prodName : 'Lavie',
+      prodDesc : 'Handbags, clutches, purse',
+      category : 'product',
+      img : 'https://m.media-amazon.com/images/I/91Ak-EDKC3L._SY695_.jpg'
+    }
+  ]
+
   getStdData(stdObj : Istudent){
     console.log(stdObj);
     this.studentArr.push(stdObj)
+  }
+
+  getProductData(prodObj : Iproduct){
+    this.productArray.push(prodObj)
   }
 }
