@@ -9,6 +9,9 @@ import { Iproduct, Istudent } from './interfaces/student';
 export class AppComponent {
   title = 'student';
 
+  productArr! :Array<Iproduct> 
+  getproductArr!:Array<Iproduct> 
+
   studentArr: Array<Istudent> = [
     {
       fname : 'John',

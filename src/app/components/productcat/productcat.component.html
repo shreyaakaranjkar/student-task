@@ -1,4 +1,4 @@
-<div class="card h-40 text-center my-3" *ngFor="let productcard of getproductArr">
+<div class="card h-40 text-center my-3">
     <div class="card-header text-white" [ngClass]="{'bg-success':productcard.category === 'product',
     'bg-primary' : productcard.category === 'catalog'}">
         <h4>{{productcard.prodName}}</h4>
